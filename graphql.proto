@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package graphql;
+
+// The greeting service definition.
+service GraphQL {
+  // Sends a greeting
+rpc SendRequest (GraphQLRequest) returns (GraphQLResponse) {}
+}
+
+// The request message containing the query.
+message GraphQLRequest {
+  string query = 1;
+}
+
+// The response message containing the greetings
+message GraphQLResponse {
+  string message = 1;
+}
