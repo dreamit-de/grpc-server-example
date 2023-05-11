@@ -89,7 +89,7 @@ const graphql_proto = grpc.loadPackageDefinition(packageDefinition).graphql;
  */
 async function sendRequest(call, callback) {
     const query = call.request.query
-    const response = await graphqlServer.executeRequest({ query: query })
+    const response = await graphqlServer.handleRequest({ query: query })
     callback(null, { message: JSON.stringify(response) });
 }
 
