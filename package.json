@@ -22,7 +22,7 @@
     "@dreamit/graphql-server": "4.2.0",
     "@grpc/grpc-js": "1.8.14",
     "@grpc/proto-loader": "0.7.7",
-    "graphql": "16.6.0"
+    "graphql": "16.8.1"
   },
   "devDependencies": {
     "eslint": "8.41.0"
